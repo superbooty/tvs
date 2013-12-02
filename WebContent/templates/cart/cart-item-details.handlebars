@@ -1,0 +1,30 @@
+<div class="cart-item-data">
+    <div class="row">
+        <div class="span2">
+            <a href="/#product/{{item.id}}"><img src="{{item.image }}" /></a>
+        </div>
+        <div class="span3">
+            <section class="cart-item-options-container">
+                <header class="cart-item-label">{{{item.name }}}</header>
+                <div class="cart-item-option">
+                    <a href="javascript:void(0)" itemtosave="{{item.id}}" class="move-to-cart-button">Move to Cart</a>
+                </div>
+                <div class="cart-item-option">
+                    <a href="javascript:void(0)" itemtoremove="{{item.id}}" class="remove-button">Remove</a>
+                </div>
+            </section>
+        </div>
+        <div class="span1">
+            <div class="cart-item-qty-container">
+                <label class="cart-item-label text-gray" title="Qty">Quantity</label>
+                <span class="h1">{{item.qty }}</span>
+            </div>
+        </div>
+        <div class="span2">
+            <div class="cart-item-price-container">
+                <label class="cart-itm-label text-gray list-price" title="listPrice">List Price ${{number-format item.price}}</label>
+                <span class="h1 item-price">${{number-format item.price }}</span>
+            </div>
+        </div>
+    </div>
+</div>
