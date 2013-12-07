@@ -206,9 +206,9 @@ var productPage = function(id){
     // Buying Options
     var BuyingOptionsModel = Backbone.Model.extend({
         defaults: {
-            listEntry1: {label:'Find This Product Locally', img:'../img/find-icon.png'},
-            listEntry2: {label:'Calculate Arrival Date', img:'../img/arrival-icon.png'},
-            listEntry3: {label:'Share With a Friend', img:'../img/share-icon.png'}
+            listEntry1: {label:'Find This Product Locally', img:'img/find-icon.png'},
+            listEntry2: {label:'Calculate Arrival Date', img:'img/arrival-icon.png'},
+            listEntry3: {label:'Share With a Friend', img:'img/share-icon.png'}
         }
     });
 
