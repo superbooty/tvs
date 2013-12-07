@@ -58,7 +58,7 @@ function program3(depth0,data) {
   return buffer;
   }
 
-  buffer += "<script type=\"text/javascript\">\n    $(document).ready(function(){\n        $('#slider-code').tinycarousel({pager:true, controls:true});\n    });\n</script>\n<div id=\"slider-code\">\n    <a class=\"buttons prev\" href=\"#\">left</a>\n    <div class=\"viewport\">\n        <ul class=\"overview\">\n            ";
+  buffer += "<script type=\"text/javascript\">\n    $(document).ready(function(){\n        $('#slider-code').tinycarousel({pager:true, controls:true, rewind:true, callback: function(element, index){\n            console.log(element, index);\n        }});\n    });\n</script>\n<div id=\"slider-code\">\n    <a class=\"buttons prev\" href=\"#\">left</a>\n    <div class=\"viewport\">\n        <ul class=\"overview\">\n            ";
   stack1 = helpers.each.call(depth0, depth0.images, {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n\n        </ul>\n    </div>\n    <a class=\"buttons next\" href=\"#\">right</a>\n    <div class=\"carousel-separator\">\n        <ul class=\"pager\">\n            <ul class=\"poverview\">\n                ";
@@ -126,14 +126,12 @@ function program1(depth0,data) {
 templates['index'] = template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [2,'>= 1.0.0-rc.3'];
 helpers = helpers || Handlebars.helpers; data = data || {};
-  var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression;
+  var stack1, functionType="function", escapeExpression=this.escapeExpression;
 
 
-  if (stack1 = helpers.greeting) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0.greeting; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  buffer += escapeExpression(stack1)
-    + " world!";
-  return buffer;
+  if (stack1 = helpers.purchaseContract) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.purchaseContract; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  return escapeExpression(stack1);
   });
 templates['main-header'] = template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [2,'>= 1.0.0-rc.3'];
@@ -224,7 +222,7 @@ function program1(depth0,data) {
   return buffer;
   }
 
-  buffer += "<script src=\"../js/tab.js\"></script>\n<div class=\"product-details\">\n\n    <div class=\"wrapper\">\n        <h2>\n            Product Details\n        </h2>\n        <div id=\"v-nav\" >\n            <ul>\n                <li tab=\"tab1\" class=\"first current\"><span class=\"product-detail-tab-name\">Description</span></li>\n                <li tab=\"tab2\"><span class=\"product-detail-tab-name\">Specifications</span></li>\n                <li tab=\"tab3\"><span class=\"product-detail-tab-name\">Warranty</span></li>\n                <li tab=\"tab4\"><span class=\"product-detail-tab-name\">Financing</span></li>\n                <li tab=\"tab5\" class=\"last\"><span class=\"product-detail-tab-name\">Gifting</span></li>\n            </ul>\n\n            <div class=\"tab-content\" style=\"display:block\">\n                ";
+  buffer += "<script src=\"js/tab.js\"></script>\n<div class=\"product-details\">\n\n    <div class=\"wrapper\">\n        <h2>\n            Product Details\n        </h2>\n        <div id=\"v-nav\" >\n            <ul>\n                <li tab=\"tab1\" class=\"first current\"><span class=\"product-detail-tab-name\">Description</span></li>\n                <li tab=\"tab2\"><span class=\"product-detail-tab-name\">Specifications</span></li>\n                <li tab=\"tab3\"><span class=\"product-detail-tab-name\">Warranty</span></li>\n                <li tab=\"tab4\"><span class=\"product-detail-tab-name\">Financing</span></li>\n                <li tab=\"tab5\" class=\"last\"><span class=\"product-detail-tab-name\">Gifting</span></li>\n            </ul>\n\n            <div class=\"tab-content\" style=\"display:block\">\n                ";
   stack2 = ((stack1 = ((stack1 = depth0.details),stack1 == null || stack1 === false ? stack1 : stack1.description)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
   if(stack2 || stack2 === 0) { buffer += stack2; }
   buffer += "\n            </div>\n\n            <div class=\"tab-content\">\n                <table class=\"spec-table\">\n                    <colgroup><col width=\"40%\">\n                        <col width=\"60%\">\n                    </colgroup><tbody>\n                ";

@@ -24,7 +24,7 @@ var productPage = function(id){
         },
 
         // url:"http://aguevara-linux.corp.walmart.com/search/catalog/itemIds.ems?itemids="+productId,
-        url:"http://localhost:8088/product-loader/product/"+productId,
+        url:"/product-loader/product/"+productId,
 
         productData: {},
 
@@ -166,7 +166,6 @@ var productPage = function(id){
             //console.log(productModel.getAlternateImages());
             this.$el.html(this.options.template({images:productModel.getAlternateImages()}));
             $('.carousel-container').html(this.el);
-            //return this;
         }
     });
 
@@ -181,7 +180,6 @@ var productPage = function(id){
             //console.log(productModel.getProductMainData());
             this.$el.html(this.options.template({about:productModel.getProductMainData()}));
             $('.about-container').html(this.el);
-            //return this;
         }
     });
 

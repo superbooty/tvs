@@ -1,7 +1,6 @@
 
 var cartPage = function () {
 	cartItems.fetch();
-    //var myCart = new com.wm.Cart();
     var cartData = null;
     var storage = null;
 
@@ -11,15 +10,9 @@ var cartPage = function () {
         storage = window['sessionStorage'];
         cartData = storage.getItem('jsonCart');
     }
-    //cartModel = new cartModel();
-    //cartModel.set({fromStorage: false});
-
-    // check to see if there is data in the
+    
     if(cartData != null){
         var parsedData = JSON.parse(cartData);
-        //build the model based on the data from sessionStorage
-        //cartModel.set({fromStorage: true});
-        //cartModel.myCartData = parsedData;
         myCart.setCartItems(parsedData.cartItems);
         myCart.setSavedItems(parsedData.savedItems);
     } 
@@ -33,7 +26,6 @@ var cartPage = function () {
         render: function(){
         	console.log(this.model.toJSON());
             this.$el.html(this.options.template({item: this.model.toJSON()}));
-            //$('.shelf-item-container').html(this.el);
             console.log(this.$el);
             return this;
         }
@@ -106,8 +98,6 @@ var cartPage = function () {
 
         sort : function(event) {
             console.log($(event.target).text());
-            //cartModel.sortBy($(event.target).text(), true);
-            //cartModel.trigger('change');
         },
 
         render:function(){

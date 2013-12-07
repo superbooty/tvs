@@ -32,7 +32,7 @@ helpers = helpers || Handlebars.helpers; data = data || {};
   var buffer = "", stack1, stack2, options, functionType="function", escapeExpression=this.escapeExpression, helperMissing=helpers.helperMissing;
 
 
-  buffer += "<div class=\"cart-item-data\">\n    <div class=\"row\">\n        <div class=\"span2\">\n            <a href=\"/#product/"
+  buffer += "<div class=\"cart-item-data\">\n    <div class=\"row\">\n        <div class=\"span2\">\n            <a href=\"#/product/"
     + escapeExpression(((stack1 = ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.id)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\"><img src=\""
     + escapeExpression(((stack1 = ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.image)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
@@ -60,7 +60,7 @@ helpers = helpers || Handlebars.helpers; data = data || {};
   var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression;
 
 
-  buffer += "<script src=\"../../js/cart/cart-accordion.js\"></script>\n<div class=\"cart-item\">\n    <section class=\"accordionMod\">\n        <div>\n            <div class=\"accordion-group\">\n                <div class=\"accordion-heading\">\n                    <div class=\"accordion-toggle collapsed\" data-toggle=\"collapse\" data-parent=\"#accordion1\"\n                         data-target=\"#collapseBox1_1\"><span class=\"icon\"></span>\n\n                        <p class=\"cart-item-count-accordion\">";
+  buffer += "<script src=\"/js/cart/cart-accordion.js\"></script>\n<div class=\"cart-item\">\n    <section class=\"accordionMod\">\n        <div>\n            <div class=\"accordion-group\">\n                <div class=\"accordion-heading\">\n                    <div class=\"accordion-toggle collapsed\" data-toggle=\"collapse\" data-parent=\"#accordion1\"\n                         data-target=\"#collapseBox1_1\"><span class=\"icon\"></span>\n\n                        <p class=\"cart-item-count-accordion\">";
   if (stack1 = helpers.forPurchaseCount) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.forPurchaseCount; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
@@ -76,7 +76,7 @@ helpers = helpers || Handlebars.helpers; data = data || {};
   buffer += "<div class=\"cart-subtotals\">\n    <div class=\"row\">\n        <div class=\"span2\">\n        </div>\n        <div class=\"span3\">\n            <section class=\"cart-pricing\">\n                <span >$";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['number-format']),stack1 ? stack1.call(depth0, depth0.subtotals, options) : helperMissing.call(depth0, "number-format", depth0.subtotals, options)))
-    + "</span>\n            </section>\n        </div>\n        <div class=\"span2\">\n            <div class=\"cart-checkout-button\">\n                <a href=\"/pages/checkout/review.html\" class=\"checkout-button\">Checkout</a>\n            </div>\n        </div>\n    </div>\n</div>";
+    + "</span>\n            </section>\n        </div>\n        <div class=\"span2\">\n            <div class=\"cart-checkout-button\">\n                <a href=\"#/pages/checkout/review.html\" class=\"checkout-button\">Checkout</a>\n            </div>\n        </div>\n    </div>\n</div>";
   return buffer;
   });
 })();
