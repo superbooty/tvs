@@ -60,7 +60,7 @@ helpers = helpers || Handlebars.helpers; data = data || {};
   var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression;
 
 
-  buffer += "<script src=\"/js/cart/cart-accordion.js\"></script>\n<div class=\"cart-item\">\n    <section class=\"accordionMod\">\n        <div>\n            <div class=\"accordion-group\">\n                <div class=\"accordion-heading\">\n                    <div class=\"accordion-toggle collapsed\" data-toggle=\"collapse\" data-parent=\"#accordion1\"\n                         data-target=\"#collapseBox1_1\"><span class=\"icon\"></span>\n\n                        <p class=\"cart-item-count-accordion\">";
+  buffer += "<script src=\"js/cart/cart-accordion.js\"></script>\n<div class=\"cart-item\">\n    <section class=\"accordionMod\">\n        <div>\n            <div class=\"accordion-group\">\n                <div class=\"accordion-heading\">\n                    <div class=\"accordion-toggle collapsed\" data-toggle=\"collapse\" data-parent=\"#accordion1\"\n                         data-target=\"#collapseBox1_1\"><span class=\"icon\"></span>\n\n                        <p class=\"cart-item-count-accordion\">";
   if (stack1 = helpers.forPurchaseCount) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.forPurchaseCount; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
