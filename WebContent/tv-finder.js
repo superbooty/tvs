@@ -241,6 +241,7 @@ var tvFinder = function () {
             $('.shelf-view-container').html(this.el);
             var that = this;
             this.model.each(function( item ) {
+            	item.set("dispPrice", that.getDispPrice(item.get("price")));
                 var index = that.model.indexOf(item);
                 if(index % 4 == 0){
                     that.$el.append("<div class='clear'></div>")
@@ -256,6 +257,14 @@ var tvFinder = function () {
                 model: item
             });
             this.$el.append( shelfItem.render().el );
+        },
+        
+        getDispPrice: function(price) {
+        	var splitPrice =  price.toString().split(".");
+        	if(!splitPrice[1]) {
+        		splitPrice[1] = "00";
+        	}
+        	return {dollars: splitPrice[0], cents:splitPrice[1]};
         }
 
     });

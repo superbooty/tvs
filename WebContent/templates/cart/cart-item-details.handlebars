@@ -23,7 +23,7 @@
         <div class="span2">
             <div class="cart-item-price-container">
                 <label class="cart-itm-label text-gray list-price" title="listPrice">List Price ${{number-format item.price}}</label>
-                <span class="h1 item-price">${{number-format item.price }}</span>
+                <span class="h1 item-price">${{item.dispPrice.dollars }}<span class="dollar">.{{item.dispPrice.cents}}</span></span>
             </div>
         </div>
     </div>

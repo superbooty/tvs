@@ -48,10 +48,11 @@ helpers = helpers || Handlebars.helpers; data = data || {};
     + "</span>\n            </div>\n        </div>\n        <div class=\"span2\">\n            <div class=\"cart-item-price-container\">\n                <label class=\"cart-itm-label text-gray list-price\" title=\"listPrice\">List Price $";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers['number-format']),stack1 ? stack1.call(depth0, ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.price), options) : helperMissing.call(depth0, "number-format", ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.price), options)))
-    + "</label>\n                <span class=\"h1 item-price\">$";
-  options = {hash:{},data:data};
-  buffer += escapeExpression(((stack1 = helpers['number-format']),stack1 ? stack1.call(depth0, ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.price), options) : helperMissing.call(depth0, "number-format", ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.price), options)))
-    + "</span>\n            </div>\n        </div>\n    </div>\n</div>";
+    + "</label>\n                <span class=\"h1 item-price\">$"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.dispPrice)),stack1 == null || stack1 === false ? stack1 : stack1.dollars)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "<span class=\"dollar\">."
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.dispPrice)),stack1 == null || stack1 === false ? stack1 : stack1.cents)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</span></span>\n            </div>\n        </div>\n    </div>\n</div>";
   return buffer;
   });
 templates['cart-item'] = template(function (Handlebars,depth0,helpers,partials,data) {

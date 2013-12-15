@@ -40,6 +40,15 @@ var productPage = function(id){
         getItemPrice: function(){
             return this.productData.price;
         },
+        
+        getDispPrice: function() {
+        	var splitPrice =  this.productData.price.toString().split(".");
+        	if(!splitPrice[1]) {
+        		splitPrice[1] = "00";
+        	}
+        	return {dollars: splitPrice[0], cents:splitPrice[1]};
+        	
+        },
 
         getProductName: function(){
             return this.productData.name;
@@ -73,11 +82,12 @@ var productPage = function(id){
         },
 
         getCartItem: function() {
-            var ret = com.wm.CartItem(
+            var ret = 
             {   qty:1,
                 name:this.getProductName(),
                 seller : 0,
                 price : this.getItemPrice(),
+                dispPrice: this.getDispPrice(),
                 hasWarranty : false,
                 linkedWarrantyId : 0,
                 isPUT : false,
@@ -85,7 +95,7 @@ var productPage = function(id){
                 image: this.productData.image,
                 id: this.productData.id,
                 isSavedItem: false
-            })
+            };
             return ret;
         }
 
@@ -103,6 +113,7 @@ var productPage = function(id){
         click: function(){
 
             var item = new cartModel(this.model.getCartItem());
+            console.log(item.toJSON());
             if(typeof cartItems.get(item) == 'undefined') {
             	cartItems.add(item);
             	item.save();

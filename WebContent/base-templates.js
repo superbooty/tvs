@@ -267,10 +267,11 @@ helpers = helpers || Handlebars.helpers; data = data || {};
   options = {hash:{},data:data};
   stack2 = ((stack1 = helpers.desc),stack1 ? stack1.call(depth0, ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.description), options) : helperMissing.call(depth0, "desc", ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.description), options));
   if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += "\n    </div>\n    <div class=\"shelf-item-price\">\n        $";
-  options = {hash:{},data:data};
-  buffer += escapeExpression(((stack1 = helpers['number-format']),stack1 ? stack1.call(depth0, ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.price), options) : helperMissing.call(depth0, "number-format", ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.price), options)))
-    + "\n    </div>\n    <div class=\"product-rating shelf-item-rating \" >\n        <span class=\"gray\">\n            <span class=\"gold\" style=\"width:";
+  buffer += "\n    </div>\n    <div class=\"shelf-item-price\">\n        $"
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.dispPrice)),stack1 == null || stack1 === false ? stack1 : stack1.dollars)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "<span class=\"dollar\">."
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.dispPrice)),stack1 == null || stack1 === false ? stack1 : stack1.cents)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</span></span>\n    </div>\n    <div class=\"product-rating shelf-item-rating \" >\n        <span class=\"gray\">\n            <span class=\"gold\" style=\"width:";
   options = {hash:{},data:data};
   buffer += escapeExpression(((stack1 = helpers.crr),stack1 ? stack1.call(depth0, ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.rating), options) : helperMissing.call(depth0, "crr", ((stack1 = depth0.item),stack1 == null || stack1 === false ? stack1 : stack1.rating), options)))
     + "\">\n            </span>\n        </span>\n    </div>\n</section>";
