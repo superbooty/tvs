@@ -61,8 +61,7 @@ var productPage = function(id){
         getAlternateImages: function(){
             if(this.productData.alternateImageData == null){
                 this.productData.alternateImageData = new Array();
-                var mainImage = {"imageSrc":this.productData.productThumbnailURL,
-                    "lgImageSrc": this.productData.productImageUrl,
+                var mainImage = {"lgImageSrc":this.productData.image,
                     "name":null};
                 this.productData.alternateImageData.push(mainImage);
             }

@@ -106,8 +106,7 @@ var mainHeaderView = new MainHeaderView({
 });
 
 var tvFinder = function () {
-
-
+	
     var collectionMeta ={
         "maxsize": 73,
         "minsize": 19,
