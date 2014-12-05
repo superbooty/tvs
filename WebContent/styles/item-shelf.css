@@ -49,6 +49,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    height: 30px;
 }
 
 .shelf-item-price{
@@ -88,8 +89,7 @@
 }
 
 .product-finder-filter-container {
-    width:1000px;
-    height:130px;
+    height: 130px;
 }
 
 .product-finder-filter-slider {
@@ -142,7 +142,6 @@
     margin:auto;
     display:block;
     padding: 25px 0 0;
-    width:950px;
 }
 
 .product-finder-filter-break {
@@ -154,6 +153,7 @@
     display: inline-block;
     height: 70px;
     margin: auto;
+    padding: 10px 0 10px;
     width: 950px;
 }
 
@@ -254,4 +254,9 @@
     font-weight: 700;
 }
 
+.shelf-filter-results {
+  margin: auto;
+  height: 90px;
+  width: 950px;
+}
 
