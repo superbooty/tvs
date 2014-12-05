@@ -20,12 +20,11 @@ define([
 	
   var MainAppView = Backbone.View.extend({
 
-    el: ".js-shelf-view",
+    el: ".js-shelf-page",
     template: shelfViewTemplate,
 
     initialize: function (options) {
       this.collection = new Products(options.data);
-      console.log(this.collection);
       // this.loadProducts();
       new FiltersView({"collection": this.collection});
       this.listenTo(AppEvents.EventBus, "shelf:filter", this.render);
@@ -44,7 +43,6 @@ define([
 
     addProductViews: function () {
       var self = this;
-      console.log("a: " + this.collection.length);
       this.collection.each(function (product, index) {
         var productView = new ProductView({model: product});
         self.$el.find(".js-product-list").append(productView.el);

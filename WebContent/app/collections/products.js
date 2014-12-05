@@ -38,7 +38,6 @@ define(["backbone", "models/product"], function (Backbone, Product) {
 
     filterOnName: function(value){
       filtered = this.filter(function (item) {
-        console.log(item);
         return item.get("name").match(value);
       });
       return this.reset(filtered);

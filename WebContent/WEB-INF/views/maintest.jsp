@@ -32,7 +32,10 @@
             </section>
             <section class="js-shelf-filter product-finder-filter-container">
             </section>
-            <div class="js-shelf-view">
+            <div class="js-shelf-page">
+                <%-- @include file="shelf-view.jsp" --%>
+            </div>
+            <div class="js-product-page">
                 <%-- @include file="shelf-view.jsp" --%>
             </div>
         </section>

@@ -21,10 +21,10 @@ define([
     "maxsize": 73,
     "minsize": 19,
     "brandName": [
-       "Vizio", "Sanyo", "Sceptre",
+      "Vizio", "Sanyo", "Sceptre",
       "Hannspree", "RCA", "Element",
       "Toshiba", "Westinghouse", "Samsung",
-      "Philips", "Hiteker", "Sharp",
+      "Philips", "Hiteker", "Sharp", "Element",
       "Emerson", "Proscan", "JVC", "LG", "Mitsubishi"
     ]
   };
@@ -68,22 +68,23 @@ define([
       $(event.currentTarget).parent().find('.options').css({visibility:'hidden'});
       event.stopPropagation();
       this.collection.filterOnName(filterOnValue);
+      AppEvents.EventBus.trigger("shelf:filter");
     },
   
     sort : function(event) {
       console.log($(event.target).text());
       this.collection.sortBy($(event.target).text(), true);
+      AppEvents.EventBus.trigger("shelf:filter");
     },
   
     mouseleave : function(event) {
       this.$el.find('.options').css({visibility:'hidden'});
-      //event.stopPropagation();
     },
   
     render: function () {
       //var data = this.model.toJSON();
       //var items = data[0].item;
-      this.$el.html(this.template(COLLECTION_META.brandName));
+      this.$el.html(this.template({brands: COLLECTION_META.brandName}));
       console.log(this.$el);
       var self = this;
   
