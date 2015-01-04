@@ -320,11 +320,11 @@ var tvFinder = function () {
             var data = this.model.toJSON();
             //var items = data[0].item;
             this.$el.html(this.options.template({brands:collectionMeta.brandName}));
-            var that = this;
+            var self = this;
             $('.product-finder-filter-container').html(this.el);
 
-            $("#range-value2").css({left:"-27px", top:"-55px"}).show();
-            $("#range-value1").css({left:"-27px", top:"-55px"}).show();
+            this.$("#range-value2").css({left:"-27px", top:"-55px"}).show();
+            this.$("#range-value1").css({left:"-27px", top:"-55px"}).show();
 
             $("#slider-range").slider({
                 range:true,
@@ -332,8 +332,8 @@ var tvFinder = function () {
                 max:100,
                 values:[ that.rangeValues[0], that.rangeValues[1] ],
                 slide:function (event, ui) {
-                    $("#range-value1 .text").html(ui.values[0]+"\"");
-                    $("#range-value2 .text").html(ui.values[1]+"\"");
+                    self.$("#range-value1 .text").html(ui.values[0]+"\"");
+                    self.$("#range-value2 .text").html(ui.values[1]+"\"");
                 },
 
                 stop: function(event, ui){
@@ -342,8 +342,8 @@ var tvFinder = function () {
                 }
             });
 
-            $("#slider-range").find('a:last').append($("#range-value2")).css({outline:"0 none"});
-            $("#slider-range").find('a:first').append($("#range-value1")).css({outline:"0 none"});
+            this.$("#slider-range").find('a:last').append($("#range-value2")).css({outline:"0 none"});
+            this.$("#slider-range").find('a:first').append($("#range-value1")).css({outline:"0 none"});
 
             this.delegateEvents(this.events);
 

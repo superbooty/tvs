@@ -24,7 +24,7 @@ var productPage = function(id){
         },
 
         // url:"http://aguevara-linux.corp.walmart.com/search/catalog/itemIds.ems?itemids="+productId,
-        url:"/product-loader/product/"+productId,
+        url:"/tvs/api/product/"+productId,
 
         productData: {},
 
