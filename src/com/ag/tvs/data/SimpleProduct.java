@@ -1,9 +1,14 @@
 
 package com.ag.tvs.data;
 
+import java.io.IOException;
 import java.io.Serializable;
 
 import javax.xml.bind.annotation.XmlRootElement;
+
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
 
 @XmlRootElement(name = "product")
 public class SimpleProduct implements Serializable {
@@ -71,7 +76,7 @@ public class SimpleProduct implements Serializable {
         return description;
     }
 
-    public void setDescriptio(String description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 
@@ -97,6 +102,23 @@ public class SimpleProduct implements Serializable {
 
     public void setDispPrice(DisplayablePrice dispPrice) {
         this.dispPrice = dispPrice;
+    }
+    
+    public String toString () {
+    	ObjectMapper mapper = ProductDataManager.getObjectMapper();
+    	try {
+			return mapper.writeValueAsString(this);
+		} catch (JsonGenerationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (JsonMappingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	return this.name;
     }
 
 }

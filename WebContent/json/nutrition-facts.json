@@ -1,0 +1,329 @@
+{
+    "Modules":{
+        "Ingredients":[
+            {
+                "displayName":"Ingredients",
+                "displayValue":[
+                    "Enriched Macaroni Product (Wheat Flour, Niacin, Ferrous Sulfate [Iron], Thiamin Mononitrate [Vitamin B1], Riboflavin [Vitamin B2], Folic Acid)",
+                    "Cheese Sauce (Water, Whey, Grated Parmesan Cheese [Part-Skim Milk, Cheese Culture, Salt, Enzymes], Canola Oil, Asiago Medium Cheese [Pasteurized Part-Skim Milk, Cheese Culture, Salt, Enzymes], Colby Cheese [Pasteurized Milk, Cheese Culture, Salt, Enzymes Annatto {Color}], Cheddar Cheese [Milk, Cheese Culture, Salt, Enzymes], Milk, Sodium Phosphate, Salt, Contains Less Than 2% of Enzyme Modified Cheese [Milk, Water, Milkfat, Sodium Phosphate, Cheese Culture, Salt, Enzymes, Vitamin A Palmitate], Whey Protein Concentrate, Cream, Milk Protein Concentrate, Sodium Alginate, Sorbic Acid As A Preservative, Cheese Culture, Milkfat, Lactic Acid, Oleoresin Paprika [Color], Annatto [Color], Natural Flavor)"
+                ]
+            }
+        ],
+        "ProductDescription":[
+            {
+                "displayName":"Item Description",
+                "displayValue":[
+                    "<div><p>Discover the smooth and creamy goodness of real Kraft cheese in Kraft Deluxe Macaroni & Cheese Dinner. Available in a box of 14 ounces, this Kraft dinner meal provides three to four servings. Made from a combination of four different cheeses, the Kraft boxed dinner is rich in taste and flavor. This deluxe macaroni dinner makes a great side dish or can be eaten as a meal on its own. Either way, the cheese lovers in your family will gobble it up and ask for more. This Kraft dinners boxed meal is a rich source of calcium and protein.</p></div><div><strong>Kraft Dinners Deluxe Four Cheese Macaroni Cheese Dinner, 14 oz:</strong><li>Good Source of Calcium; Protein</li><li>Made W/Real Kraft Cheese</li><li>The Taste of Rich; Creamy Kraft Cheese Sauce</li><li>Smoky Chicken; Peppers Mac Recipe</li></div>"
+                ]
+            }
+        ],
+        "Instructions":[
+            {
+                "displayName":"Instructions",
+                "displayValue":[
+                    "Basic: 1. Boil 8 Cups (2 Quarts) Water. Stir In Macaroni. Boil 8 to 10 Minutes Or to Desired Tenderness, Stirring Occasionally. Drain. Do Not Rinse. Return to Pain. 2. Cut Off Top Edge of Cheese Sauce Pouch. 3. Squeeze Cheese Sauce Over Hot Macaroni. Stir Until Well Blended. Makes 4 Servings. Note: Do Not Overcook Pasta."
+                ]
+            }
+        ],
+        "Specifications":{
+            "specifications":{
+                "values":{
+                    "model_number":{
+                        "displayValue":"30062",
+                        "displayName":"Model No."
+                    },
+                    "height":{
+                        "displayValue":"4.56",
+                        "displayName":"Height"
+                    },
+                    "walmart_number":{
+                        "displayValue":"009223844",
+                        "displayName":"Walmart No."
+                    },
+                    "product_dimensions_inches":{
+                        "displayValue":"1.9 x 6.25 x 4.53",
+                        "displayName":"Product in Inches (L x W x H)"
+                    },
+                    "shipping_weight_pounds":{
+                        "displayValue":"0.875",
+                        "displayName":"Shipping Weight (in pounds)"
+                    }
+                }
+            }
+        },
+        "GeneralInfo":[
+            {
+                "displayName":"Walmart ID#",
+                "displayValue":[
+                    "10295755"
+                ]
+            },
+            {
+                "displayName":"Title",
+                "displayValue":[
+                    "Kraft Dinners: Deluxe Four Cheese Macaroni & Cheese Dinner, 14 oz"
+                ]
+            },
+            {
+                "displayName":"UPC",
+                "displayValue":[
+                    "0002100065655"
+                ]
+            },
+            {
+                "displayName":"Average Rating",
+                "displayValue":[
+                    "5"
+                ]
+            },
+            {
+                "displayName":"Category Group",
+                "displayValue":[
+                    "Grocery - General"
+                ]
+            },
+            {
+                "displayName":"Item Added On",
+                "displayValue":[
+                    "09-AUG-08"
+                ]
+            },
+            {
+                "displayName":"Sold by",
+                "displayValue":[
+                    "Walmart.com"
+                ]
+            },
+            {
+                "displayName":"Brand",
+                "displayValue":[
+                    "Kraft"
+                ]
+            }
+        ],
+        "NutritionFacts":{
+            "static_content":{
+                "values":{
+                    "static_content":{
+                        "displayValue":"<div class=\"RCol\"> <p>(-) Information is currently not available for this nutrient.</p> <p>* Percent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs:**</p> <p>** Percent Daily Values listed below are intended for adults and children over 4 years of age. Foods represented or purported to be for use by infants, children less than 4 years of age, pregnant women, or lactating women shall use the RDI's that are specified for the intended group provided by the FDA.</p> <table summary=\"RecommendedDailyAllowance\"> <thead> <tr> <th></th> <th>Calories:</th> <th>2,000</th> <th>2,500</th> </tr> </thead> <tbody> <tr> <td>Total Fat</td> <td>Less than</td> <td>65g</td> <td>80g</td> </tr> <tr> <td>Sat. Fat</td> <td>Less than</td> <td>20g</td> <td>25g</td> </tr> <tr> <td>Cholesterol</td> <td>Less than</td> <td>300mg</td> <td>300mg</td> </tr> <tr> <td>Sodium</td> <td>Less than</td> <td>2400mg</td> <td>2400mg</td> </tr> <tr> <td colspan=\"2\">Potassium</td> <td>3500mg</td> <td>3500mg</td> </tr> <tr> <td colspan=\"2\">Total Carbohydrate</td> <td>300mg</td> <td>375mg</td> </tr> <tr> <td colspan=\"2\">Dietary Fiber</td> <td>25mg</td> <td>30mg</td> </tr> </tbody> </table> <p class=\"CalsPerGram\">Calories per gram:</p> <p class=\"CalsPerGramValues\">Fat 9<span>&#8226;</span>Carbohydrate 4<span>&#8226;</span>Protein 4</p> </div>",
+                        "displayName":"General Facts"
+                    }
+                }
+            },
+            "vitamins_minerals":{
+                "values":null,
+                "children":[
+                    {
+                        "nutrient_dvp":{
+                            "displayValue":"4%",
+                            "displayName":"% Daily Value"
+                        },
+                        "nutrient_name":{
+                            "displayValue":"Vitamin A",
+                            "displayName":"Nutrient Name"
+                        }
+                    },
+                    {
+                        "nutrient_dvp":{
+                            "displayValue":"0",
+                            "displayName":"% Daily Value"
+                        },
+                        "nutrient_name":{
+                            "displayValue":"Vitamin C",
+                            "displayName":"Nutrient Name"
+                        }
+                    },
+                    {
+                        "nutrient_dvp":{
+                            "displayValue":"15%",
+                            "displayName":"% Daily Value"
+                        },
+                        "nutrient_name":{
+                            "displayValue":"Calcium",
+                            "displayName":"Nutrient Name"
+                        }
+                    },
+                    {
+                        "nutrient_dvp":{
+                            "displayValue":"10%",
+                            "displayName":"% Daily Value"
+                        },
+                        "nutrient_name":{
+                            "displayValue":"Iron",
+                            "displayName":"Nutrient Name"
+                        }
+                    }
+                ]
+            },
+            "calorie_information":{
+                "values":null,
+                "children":[
+                    {
+                        "nutrient_amount":{
+                            "displayValue":"320",
+                            "displayName":"Amount Per Serving"
+                        },
+                        "nutrient_name":{
+                            "displayValue":"Calories",
+                            "displayName":"Nutrient Name"
+                        }
+                    },
+                    {
+                        "nutrient_amount":{
+                            "displayValue":"90",
+                            "displayName":"Amount Per Serving"
+                        },
+                        "nutrient_name":{
+                            "displayValue":"Calories From Fat",
+                            "displayName":"Nutrient Name"
+                        }
+                    }
+                ]
+            },
+            "serving_information":{
+                "values":null,
+                "children":[
+                    {
+                        "serving_size":{
+                            "displayValue":"98 g",
+                            "displayName":"Serving Size"
+                        }
+                    },
+                    {
+                        "servings_per_container":{
+                            "displayValue":"4",
+                            "displayName":"Servings Per Container"
+                        }
+                    }
+                ]
+            },
+            "key_nutrients":{
+                "values":null,
+                "children":[
+                    {
+                        "nutrient_dvp":{
+                            "displayValue":"15%",
+                            "displayName":"% Daily Value"
+                        },
+                        "children":[
+                            {
+                                "nutrient_dvp":{
+                                    "displayValue":"18%",
+                                    "displayName":"% Daily Value"
+                                },
+                                "nutrient_amount":{
+                                    "displayValue":"3.50 g",
+                                    "displayName":"Amount Per Serving"
+                                },
+                                "nutrient_name":{
+                                    "displayValue":"Saturated Fat",
+                                    "displayName":"Nutrient Name"
+                                }
+                            },
+                            {
+                                "nutrient_amount":{
+                                    "displayValue":"0 g",
+                                    "displayName":"Amount Per Serving"
+                                },
+                                "nutrient_name":{
+                                    "displayValue":"Trans Fat",
+                                    "displayName":"Nutrient Name"
+                                }
+                            }
+                        ],
+                        "nutrient_amount":{
+                            "displayValue":"10 g",
+                            "displayName":"Amount Per Serving"
+                        },
+                        "nutrient_name":{
+                            "displayValue":"Total Fat",
+                            "displayName":"Nutrient Name"
+                        }
+                    },
+                    {
+                        "nutrient_dvp":{
+                            "displayValue":"5%",
+                            "displayName":"% Daily Value"
+                        },
+                        "nutrient_amount":{
+                            "displayValue":"15 mg",
+                            "displayName":"Amount Per Serving"
+                        },
+                        "nutrient_name":{
+                            "displayValue":"Cholesterol",
+                            "displayName":"Nutrient Name"
+                        }
+                    },
+                    {
+                        "nutrient_dvp":{
+                            "displayValue":"37%",
+                            "displayName":"% Daily Value"
+                        },
+                        "nutrient_amount":{
+                            "displayValue":"890 mg",
+                            "displayName":"Amount Per Serving"
+                        },
+                        "nutrient_name":{
+                            "displayValue":"Sodium",
+                            "displayName":"Nutrient Name"
+                        }
+                    },
+                    {
+                        "nutrient_dvp":{
+                            "displayValue":"15%",
+                            "displayName":"% Daily Value"
+                        },
+                        "children":[
+                            {
+                                "nutrient_dvp":{
+                                    "displayValue":"8%",
+                                    "displayName":"% Daily Value"
+                                },
+                                "nutrient_amount":{
+                                    "displayValue":"2 g",
+                                    "displayName":"Amount Per Serving"
+                                },
+                                "nutrient_name":{
+                                    "displayValue":"Dietary Fiber",
+                                    "displayName":"Nutrient Name"
+                                }
+                            },
+                            {
+                                "nutrient_amount":{
+                                    "displayValue":"3 g",
+                                    "displayName":"Amount Per Serving"
+                                },
+                                "nutrient_name":{
+                                    "displayValue":"Sugars",
+                                    "displayName":"Nutrient Name"
+                                }
+                            }
+                        ],
+                        "nutrient_amount":{
+                            "displayValue":"46 g",
+                            "displayName":"Amount Per Serving"
+                        },
+                        "nutrient_name":{
+                            "displayValue":"Total Carboydrate",
+                            "displayName":"Nutrient Name"
+                        }
+                    },
+                    {
+                        "nutrient_dvp":{
+                            "displayValue":"15%",
+                            "displayName":"% Daily Value"
+                        },
+                        "nutrient_amount":{
+                            "displayValue":"12 g",
+                            "displayName":"Amount Per Serving"
+                        },
+                        "nutrient_name":{
+                            "displayValue":"Protein",
+                            "displayName":"Nutrient Name"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
