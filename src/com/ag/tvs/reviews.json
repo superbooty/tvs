@@ -1,0 +1,49 @@
+
+[
+    {
+        "name":"Holy shit, this is amazing",
+        "description":"What a great product. I almost couldnt believe this unicorn exists",
+        "rating":4
+    },
+    {
+        "name":"This was just OK.  Actually I was a bit disappointed",
+        "description":"This was complete crap, I'll never buy this again unless it's on sale",
+        "rating":2
+    },
+    {
+        "name":"I'm not gonna lie, this is product is OK",
+        "description":"I wish it could fly though",
+        "rating":3
+    },
+    {
+        "name":"This product is a solid performer",
+        "description":"there is room for improvement here but it's not bad",
+        "rating":3
+    },
+    {
+        "name":"My liky, I think I want 2 more of these",
+        "description":"That's what I'm talking about, finally a product that changes lives",
+        "rating":4
+    },
+    {
+        "name":"Not good, Not good, Not good",
+        "description":"Never buy this crap",
+        "rating":2
+    },
+    {
+        "name":"There is no way to make this better",
+        "description":"As long as products this good hit the market, I'll continue to be a consumer",
+        "rating":5
+    },
+    {
+        "name":"What a piece of garbage, I want my money back",
+        "description":"This product makes me want to poop",
+        "rating":2
+    },
+    {
+        "name":"I could take it or leave it",
+        "description":"This was OK",
+        "rating":3
+    }
+    
+]

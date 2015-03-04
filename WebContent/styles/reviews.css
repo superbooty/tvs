@@ -1,0 +1,125 @@
+
+.review {
+    width: 160px;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 4px;
+    background-color: #fff;
+    height: 155px;
+    margin: 0 0 10px 0;
+}
+
+.review-header {
+    margin: 10px;
+}
+
+.review-list {
+	list-style-type:none;
+}
+
+.review-text {
+	background-color: #fff9e5;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.review-seg {
+	margin: 5px;
+}
+
+.review-title {
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0 0 10px 0;
+}
+
+button, input[type="submit"], input[type="button"], input[type="reset"] {
+    cursor: pointer;
+    line-height: normal;
+}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="tel"], textarea, select {
+    border: 1px solid #D8D8D8;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+.filter {
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+.filter .qty-button {
+    background: linear-gradient(to bottom, rgba(219, 219, 219, 0) 0%, rgba(219, 219, 219, 0.65) 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    color: #666666;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Verdana;
+    font-size: 16px;
+    height: 37px;
+    margin: 0 0 5px 0;
+    padding: 10px 50px 10px 10px;
+    position: relative;
+    text-align: left;
+    width: 30px;
+}
+
+.filter .options {
+    background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px 4px 4px 4px;
+	left: 60px;
+	min-width: 120px;
+	position: absolute;
+	top: -40px;
+	z-index: 1;
+}
+
+.filter .qty-button-arrow {
+    border-color: #333333 transparent transparent;
+    border-style: solid;
+    border-width: 8px;
+    display: inline-block;
+    font-size: 0;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 0;
+}
+
+.gh-results .item .rating {
+    padding:0px 0px;
+}
+
+.gh-results .item .rating .gray, .gh-results .item .rating .gold {
+    display:inline-block; width:100px; height:20px;
+    background:transparent url(images/stars.png) repeat-x 0 0;
+}
+
+.gh-results .item .rating .gold {
+    background-position:0 -20px;
+}
+
+.product-rating .gray, .product-rating .gold {
+    background: url("../img/stars.png") repeat-x scroll 0 0 transparent;
+    display: inline-block;
+    height: 20px;
+    width: 100px;
+}
+
+.shelf-item-rating {
+    padding:0;
+}
+
+.product-rating .gold {
+    background-position: 0 -21px;
+}
+
+.ratings-filter {
+	height: 100px;
+}

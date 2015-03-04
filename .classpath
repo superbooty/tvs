@@ -11,7 +11,7 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry including="**/*.java" kind="src" path="src">
+	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
@@ -23,5 +23,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/Users/a0gueva/Downloads/mysql-connector-java-5.1.34/mysql-connector-java-5.1.34-bin.jar"/>
-	<classpathentry kind="output" path="build"/>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>

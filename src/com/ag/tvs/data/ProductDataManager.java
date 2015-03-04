@@ -25,31 +25,25 @@ public class ProductDataManager {
 	
 	private static final Logger LOGGER = Logger.getLogger(ProductDataManager.class);
 	
+	private static final String SQL_DB_ALL_PRODUCTS = "select * from WMT_BASE_PRODUCT";
+	private static final String SQL_DB_PRODUCT_BY_ID = "select * from WMT_BASE_PRODUCT where id = ?";
+	private static final String SQL_DB_PRODUCTS_BY_ID = "select * from WMT_BASE_PRODUCT where id in (?)";
+	
 	public static List<SimpleProduct> getAllProducts() {
 		
-		String SQL = "select * from WMT_BASE_PRODUCT";
 		List<SimpleProduct> products = new ArrayList<SimpleProduct>();
 		Connection conn = ProductDataManager.getJNDIConnection();
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
-			pstmt = conn.prepareStatement(SQL);
+			pstmt = conn.prepareStatement(ProductDataManager.SQL_DB_ALL_PRODUCTS);
 			rs = pstmt.executeQuery();
 			if (rs != null) {
 				
 				while (rs.next()) {
-					SimpleProduct sProduct = new SimpleProduct();
-					sProduct.setId(rs.getInt(1));
-					sProduct.setUrl(rs.getString(2));
-					sProduct.setName(rs.getString(3));
-					sProduct.setSize(rs.getInt(4));
-					sProduct.setListPrice(rs.getDouble(5));
-					sProduct.setPrice(rs.getDouble(6));
-					sProduct.setImage(rs.getString(7));
-					sProduct.setDescription(rs.getString(8));
-					sProduct.setRating(rs.getDouble(9));
-					products.add(sProduct);
-					LOGGER.info(sProduct.toString());
+					SimpleProduct product = new SimpleProduct();
+					product = ProductDataManager.buildProductFromRS(rs);
+					products.add(product);
 				}
 			}
 			
@@ -68,6 +62,59 @@ public class ProductDataManager {
 			
 		}
 		return products;
+	}
+	
+	public static SimpleProduct getProductById(Integer id) {
+		
+		SimpleProduct product = null;
+		Connection conn = ProductDataManager.getJNDIConnection();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			pstmt = conn.prepareStatement(ProductDataManager.SQL_DB_PRODUCT_BY_ID);
+			pstmt.setInt(1, id);
+			rs = pstmt.executeQuery();
+			if (rs != null) {
+				while (rs.next()) {
+					product = ProductDataManager.buildProductFromRS(rs);
+				}
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				rs.close();
+				pstmt.close();
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		return product;
+	}
+	
+	public static SimpleProduct buildProductFromRS (ResultSet rs) {
+		SimpleProduct simpleProduct = new SimpleProduct();
+		try {
+			simpleProduct.setId(rs.getInt(1));
+			simpleProduct.setUrl(rs.getString(2));
+			simpleProduct.setName(rs.getString(3));
+			simpleProduct.setSize(rs.getInt(4));
+			simpleProduct.setListPrice(rs.getDouble(5));
+			simpleProduct.setPrice(rs.getDouble(6));
+			simpleProduct.setImage(rs.getString(7));
+			simpleProduct.setDescription(rs.getString(8));
+			simpleProduct.setRating(rs.getDouble(9));
+			LOGGER.info(simpleProduct.toString());
+		} catch (SQLException e) {
+			LOGGER.error("Exception processing result set." + e);
+		}	
+		return simpleProduct;
+		
 	}
 	
 	public static ObjectMapper getObjectMapper() {

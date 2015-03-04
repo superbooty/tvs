@@ -58,14 +58,9 @@ public class ProductFinderController {
 
 	@RequestMapping(value = "/api/product/{id}", method = RequestMethod.GET)
 	public @ResponseBody SimpleProduct getProductById(
-			@PathVariable("id") long id) {
+			@PathVariable("id") int id) {
 		SimpleProduct retVal = null;
-		for (SimpleProduct product : products) {
-			if (product.getId() == id) {
-				retVal = product;
-				break;
-			}
-		}
+		retVal = ProductDataManager.getProductById(id);
 		LOGGER.info("Returning: " + retVal);
 		return retVal;
 	}
@@ -103,5 +98,6 @@ public class ProductFinderController {
 		}
 		return "maintest";
 	}
+	
 
 }
